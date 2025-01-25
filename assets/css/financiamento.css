@@ -1,0 +1,116 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#5c5c5c, #fff);
+    font-size: 1rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 450px;
+    width: 100%;
+  }
+  .calculator-container {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: #000; 
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .mb-3 {
+    margin-bottom: 15px;
+  }
+  label {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  input:focus,
+  select:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+  }
+  button {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #555; 
+  }
+  .result-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #ddd;
+  }
+  .result-box h4 {
+    text-align: center;
+    color: #000; 
+    margin-bottom: 15px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .row p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+
+  
+  @media (max-width: 768px) {
+    .calculator-container {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+    .form-control {
+      font-size: 0.9rem;
+    }
+    button {
+      font-size: 0.9rem;
+    }
+  }
